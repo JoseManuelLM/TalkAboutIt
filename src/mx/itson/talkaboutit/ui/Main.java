@@ -32,7 +32,7 @@ public class Main {
         
         // Se crea un tema topic1 y se le asignan valores para título, contenido y autor.
         Topic topic1 = new Topic();
-        topic1.setTitle("Mi amor por los coches.");
+        topic1.setTitle("Mi pasión por los coches.");
         topic1.setCategory("Coches.");
         topic1.setContent("Me gustan mucho los coches.");
         topic1.setAuthor(user1);
