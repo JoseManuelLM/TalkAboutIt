@@ -23,7 +23,7 @@ public class Topic {
     //Constructor de la clase.
     public Topic() {}
     
-    // Inicializa la lista de votos.
+    // Inicializa la lista de votos y respuestas.
     {
         votes = new ArrayList<>();
         replies = new ArrayList<>();

@@ -19,6 +19,7 @@ public class Reply {
     private List<Reply> subReplies;
     // Constructor de la clase.
     public Reply() {}
+    // Inicializa la lista de votos y subrespuestas.
     {
         votes = new ArrayList<>();
         subReplies = new ArrayList<>();
