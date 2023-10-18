@@ -5,22 +5,22 @@ import java.time.LocalDate;
 import mx.itson.talkaboutit.entities.*;
 /**
  * Clase Main de la aplicación "TalkAboutIt".
- * Aquí se llevan a cabo algunas operaciones de prueba con los objetos User, Topic y Reply.
+ * Operaciones de prueba con los objetos User, Topic y Reply.
  * 
  * @author José Manuel Leyva Munguía
  */
 public class Main {
     /**
      * Método principal que inicia la ejecución de la aplicación.
-     * @param args Los argumentos de la línea de comandos (no se utilizan en este caso).
+     * @param args Los argumentos de la línea de comandos
      */
     public static void main(String[] args) {
-        // Se crea un usuario (user1) y se le asignan valores para nombre, email y contraseña.
+        // Se crea un usuario user1 y se le asignan valores para nombre, email y contraseña.
         User user1 = new User();
         user1.setName("Juan Perez");
         user1.setEmail("JuanP@gmail.com");
         user1.setPassword("12345");
-        // Se crea un usuario (user2) y se le asignan valores para nombre, email y contraseña.
+        // Se crea un usuario user2 y se le asignan valores para nombre, email y contraseña.
         User user2 = new User();
         user2.setName("Esteban Jimenez");
         user2.setEmail("EstebanJ@gmail.com");
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("User Name: " + user1.getName());
         System.out.println("User Email: " + user1.getEmail());
         
-        // Se crea un tema (topic1) y se le asignan valores para título, contenido y autor.
+        // Se crea un tema topic1 y se le asignan valores para título, contenido y autor.
         Topic topic1 = new Topic();
         topic1.setTitle("Mi amor por los coches.");
         topic1.setCategory("Coches.");
@@ -49,7 +49,7 @@ public class Main {
         LocalDate topic1CreationDate = topic1.getCreationDate();
         System.out.println("Fecha de publicación del Topic1: " + topic1CreationDate);
         
-        // Se crea una respuesta (reply1) y se le asigna un contenido y un autor, los cuales se imprimen.
+        // Se crea una respuesta reply1 y se le asigna un contenido y un autor, los cuales se imprimen.
         Reply reply1 = new Reply();
         reply1.setContent("No me gustan los coches.");
         reply1.setAuthor(user2);

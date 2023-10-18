@@ -4,8 +4,8 @@ package mx.itson.talkaboutit.entities;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Representa un usuario registrado en la plataforma "TalkAboutIt".
- * Cada usuario tiene un nombre, dirección de correo electrónico, contraseña y listas de temas y respuestas votadas.
+ * Representa un usuario registrado.
+ * Tiene un nombre, dirección de correo electrónico, contraseña y listas de temas y respuestas votadas.
  * Los usuarios pueden votar temas y respuestas a favor o en contra.
  * 
  * @author José Manuel Leyva Munguía

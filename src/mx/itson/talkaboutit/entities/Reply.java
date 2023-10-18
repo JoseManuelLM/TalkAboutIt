@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.List;
 /**
  * Representa una respuesta a un tema de discusión.
- * Cada respuesta tiene contenido, autor, votos y una fecha de creación.
+ * Tiene contenido, autor, votos y una fecha de creación.
  * Al igual que en los temas, los usuarios pueden votar a favor o en contra de una respuesta.
  * 
  * @author José Manuel Leyva Munguía

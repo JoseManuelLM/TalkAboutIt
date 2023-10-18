@@ -3,7 +3,7 @@ package mx.itson.talkaboutit.entities;
 
 /**
  * Representa un voto dado por un usuario en la plataforma "TalkAboutIt".
- * Cada voto contiene información sobre el usuario que votó y si el voto es a favor o en contra.
+ * Tiene información sobre el usuario que votó y si el voto es a favor o en contra.
  * 
  * @author Josem
  */
