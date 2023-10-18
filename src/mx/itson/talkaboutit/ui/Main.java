@@ -63,6 +63,20 @@ public class Main {
         LocalDate reply1CreationDate = reply1.getCreationDate();
         System.out.println("Fecha de publicación de la Reply1: " + reply1CreationDate);
         
+        //Se agrega una subrespuesta subreply1 a la respuesta reply1
+        Reply subreply1 = new Reply();
+        subreply1.setContent("Oh! Entiendo...");
+        subreply1.setAuthor(user1);
+        reply1.addSubReply(subreply1);
+        System.out.println("Autor de la subrespuesta Subreply1: " + subreply1.getAuthor().getName());
+        System.out.println("Respuesta: " + subreply1.getContent());
+        
+        // Se establece la fecha de creación de subreply1 y se imprime.
+        LocalDate CreationDate3 = LocalDate.of(2023, 10, 19);
+        subreply1.setCreationDate(CreationDate3);
+        LocalDate subreply1CreationDate = subreply1.getCreationDate();
+        System.out.println("Fecha de publicación de la subreply1: " + subreply1CreationDate);
+        
         // User1 le da UpVote al tema topic1 y a la respuesta reply1 y se guardan en un listado.
         topic1.upvote(user1);
         user1.addUpvotedTopicToList(topic1);

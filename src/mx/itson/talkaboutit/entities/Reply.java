@@ -16,13 +16,12 @@ public class Reply {
     private User author;
     private List<Vote> votes;
     private LocalDate creationDate;
-
+    private List<Reply> subReplies;
     // Constructor de la clase.
     public Reply() {}
-    
-    // Inicializa la lista de votos.
     {
         votes = new ArrayList<>();
+        subReplies = new ArrayList<>();
     }
     /**
      * Obtiene el contenido de la respuesta.
@@ -95,5 +94,16 @@ public class Reply {
      */
     public void setCreationDate(LocalDate creationDate){
         this.creationDate = creationDate;
+    }
+    public List<Reply> getSubReplies() {
+        return subReplies;
+    }
+
+    public void addSubReply(Reply subReply) {
+        subReplies.add(subReply);
+    }
+
+    public void removeSubReply(Reply subReply) {
+        subReplies.remove(subReply);
     }
 }

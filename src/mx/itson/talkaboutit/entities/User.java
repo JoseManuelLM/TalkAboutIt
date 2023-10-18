@@ -1,6 +1,7 @@
 
 package mx.itson.talkaboutit.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 /**
  * Representa un usuario registrado en la plataforma "TalkAboutIt".
@@ -13,10 +14,10 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private List<Topic> upvotedTopics;
-    private List<Topic> downvotedTopics;
-    private List<Reply> upvotedReplies;
-    private List<Reply> downvotedReplies;
+    private List<Topic> upvotedTopics = new ArrayList<>();
+    private List<Topic> downvotedTopics = new ArrayList<>();;
+    private List<Reply> upvotedReplies = new ArrayList<>();;
+    private List<Reply> downvotedReplies = new ArrayList<>();;
        
     // Constructor de la clase.
     public User() {

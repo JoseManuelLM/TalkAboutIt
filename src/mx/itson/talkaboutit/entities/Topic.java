@@ -26,6 +26,7 @@ public class Topic {
     // Inicializa la lista de votos.
     {
         votes = new ArrayList<>();
+        replies = new ArrayList<>();
     }
     /**
      * Obtiene el título del tema.
