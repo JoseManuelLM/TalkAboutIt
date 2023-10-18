@@ -96,14 +96,24 @@ public class Reply {
     public void setCreationDate(LocalDate creationDate){
         this.creationDate = creationDate;
     }
+    /**
+    * Obtiene la lista de subrespuestas asociadas a esta respuesta.
+    * @return Lista de subrespuestas.
+    */
     public List<Reply> getSubReplies() {
         return subReplies;
     }
-
+    /**
+    * Añade una subrespuesta a la lista de subrespuestas de esta respuesta.
+    * @param subReply La subrespuesta que se va a añadir.
+    */
     public void addSubReply(Reply subReply) {
         subReplies.add(subReply);
     }
-
+    /**
+    * Elimina una subrespuesta de la lista de subrespuestas de esta respuesta.
+    * @param subReply La subrespuesta que se va a eliminar.
+    */
     public void removeSubReply(Reply subReply) {
         subReplies.remove(subReply);
     }
